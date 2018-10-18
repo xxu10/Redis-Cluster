@@ -1,4 +1,4 @@
-# Redis-Cluster
+# Redis-Cluster Distributed Cache
 
 3-Master and 3-Slave Redis Distributed Cache. Used Lettuce to help build and manage the cluster. The topology is as below:
 
