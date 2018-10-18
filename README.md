@@ -1,6 +1,6 @@
 # Redis-Cluster
 
-3-Master and 3-Slave Redis Distributed Cache. The topology is as below:
+3-Master and 3-Slave Redis Distributed Cache. Used Lettuce to help build and manage the cluster. The topology is as below:
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.09.34%20PM.png)
 
@@ -23,9 +23,21 @@ the cluser will change to:
 
 We need to balance the master and slave, just use clusterFailOver at A-M
 
-2. If A-M is still offline after 5 seconds
+2. If A-M is still offline after 5 seconds, we need to replace this node.
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%208.42.08%20PM.png)
+
+First, we need to join another node into cluster, just use clusterMeet and then check which master node doesn't have slave, so let the new node becomes the slave of that master node.
+
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%209.36.27%20PM.png)
+
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%205.34.28%20PM.png)
+
+After that, re-balance the masters and slaves.
+
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%205.32.54%20PM.png)
+
+
 
 
 
