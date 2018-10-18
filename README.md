@@ -8,5 +8,10 @@ First we need to build the cluster, instead of using redis-trib.rb, I used Lettu
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%208.31.45%20PM.png)
 
-If one master node is offline, for example, the A-M, the cluser will change to:
+If one master node is offline, for example, the A-M, A-S will take the responsibility of A-M and become a master,
+the cluser will change to:
+
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.31.43%20PM.png)
+
+If A-M become alive in 5 seconds, the 
 
