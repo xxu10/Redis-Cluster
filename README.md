@@ -19,6 +19,8 @@ the cluser will change to:
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.39.36%20PM.png)
 
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%208.50.03%20PM.png)
+
 We need to balance the master and slave, just use clusterFailOver at A-M
 
 2. If A-M is still offline after 5 seconds
