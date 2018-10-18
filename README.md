@@ -13,5 +13,10 @@ the cluser will change to:
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.31.43%20PM.png)
 
-If A-M become alive in 5 seconds, the 
+If A-M become alive in 5 seconds, the original A-M will be A-S this time,
+
+
+
+
+We need to balance the master and slave, just use clusterFailOver at A-M
 
