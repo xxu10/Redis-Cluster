@@ -31,11 +31,14 @@ First, we need to join another node into cluster, just use clusterMeet and then 
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%209.36.27%20PM.png)
 
-![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%205.34.28%20PM.png)
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%205.32.54%20PM.png)
 
 After that, re-balance the masters and slaves.
 
-![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%205.32.54%20PM.png)
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%205.34.28%20PM.png)
+
+
+
 
 
 
