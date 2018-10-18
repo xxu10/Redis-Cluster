@@ -13,10 +13,15 @@ the cluser will change to:
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.31.43%20PM.png)
 
-If A-M become alive in 5 seconds, the original A-M will be A-S this time,
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%208.41.57%20PM.png)
 
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-17%20at%208.42.08%20PM.png)
 
+1. If A-M become alive in 5 seconds, the original A-M will be A-S this time,
 
+![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.39.36%20PM.png)
 
 We need to balance the master and slave, just use clusterFailOver at A-M
+
+2. If A-M is still offline after 5 seconds
 
