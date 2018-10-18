@@ -4,4 +4,8 @@
 
 ![](https://github.com/xxu10/Redis-Cluster/blob/master/images/Screen%20Shot%202018-10-18%20at%206.09.34%20PM.png)
 
-First we need to build the cluster, instead of using redis-trib.rb, I used Lettuce(https://lettuce.io/) to do that. I opened 6 Redis instances to simulate 6 nodes in this cluster.
+First we need to build the cluster, instead of using redis-trib.rb, I used Lettuce (https://lettuce.io/) to do that. I opened 6 Redis instances to simulate 6 nodes in this cluster. After the bulid process, the cache will be ready to use.
+
+
+If one master node is offline, for example, the A-M, the cluser will change to:
+
